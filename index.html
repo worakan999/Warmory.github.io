@@ -1,11 +1,254 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>Warmory</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Warmory | ของชำร่วย & ของพรีเมี่ยม</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Noto Sans Thai',sans-serif;
+    }
+
+    body{
+      background:#faf7f3;
+      color:#333;
+    }
+
+    header{
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:white;
+      position:sticky;
+      top:0;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+      z-index:100;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#8b6b52;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#444;
+      margin-left:20px;
+      font-weight:500;
+    }
+
+    .hero{
+      min-height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px 8%;
+      background:linear-gradient(to bottom, #fff8f2, #f6efe8);
+    }
+
+    .hero-content h1{
+      font-size:56px;
+      color:#7c5b45;
+      margin-bottom:16px;
+    }
+
+    .hero-content p{
+      font-size:20px;
+      max-width:700px;
+      margin:auto;
+      line-height:1.8;
+      color:#666;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:14px 32px;
+      background:#8b6b52;
+      color:white;
+      text-decoration:none;
+      border-radius:999px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#6f533f;
+    }
+
+    .section{
+      padding:80px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:36px;
+      margin-bottom:50px;
+      color:#7c5b45;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      margin-bottom:10px;
+      color:#7c5b45;
+    }
+
+    .card-content p{
+      color:#666;
+      line-height:1.6;
+      font-size:15px;
+    }
+
+    .contact{
+      text-align:center;
+      background:#fff;
+      border-radius:30px;
+      padding:60px 20px;
+    }
+
+    .contact h2{
+      margin-bottom:20px;
+      color:#7c5b45;
+    }
+
+    .contact-buttons{
+      margin-top:25px;
+    }
+
+    .contact-buttons a{
+      margin:10px;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#777;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+      .hero-content h1{
+        font-size:40px;
+      }
+
+      .hero-content p{
+        font-size:16px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Warmory</h1>
-  <p>ของชำร่วย & ของพรีเมี่ยมมินิมอล ✨</p>
+
+  <header>
+    <div class="logo">Warmory</div>
+
+    <nav>
+      <a href="#products">สินค้า</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Warm Memories in Every Gift</h1>
+
+      <p>
+        ของชำร่วย & ของพรีเมี่ยมมินิมอล  
+        เหมาะสำหรับงานแต่ง งานอีเวนต์ และของแจกพิเศษ ✨
+      </p>
+
+      <a href="#products" class="btn">ดูสินค้า</a>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+
+    <h2 class="section-title">Our Products</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1200&auto=format&fit=crop" alt="">
+        <div class="card-content">
+          <h3>เทียนหอม</h3>
+          <p>เทียนหอมมินิมอล กลิ่นอบอุ่น เหมาะสำหรับของขวัญและของชำร่วย</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="">
+        <div class="card-content">
+          <h3>แฮนด์ครีม</h3>
+          <p>แพ็กเกจเรียบหรู พร้อมสติ๊กเกอร์ชื่อคู่บ่าวสาวหรือโลโก้แบรนด์</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?q=80&w=1200&auto=format&fit=crop" alt="">
+        <div class="card-content">
+          <h3>น้ำผึ้งจิ๋ว</h3>
+          <p>ของชำร่วยสุดน่ารัก ฟีลอบอุ่นและพรีเมี่ยม</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="contact" id="contact">
+
+      <h2>Contact Us</h2>
+
+      <p>สอบถามรายละเอียด หรือสั่งผลิตของชำร่วยได้เลย 💖</p>
+
+      <div class="contact-buttons">
+        <a class="btn" href="https://line.me/" target="_blank">LINE</a>
+        <a class="btn" href="https://facebook.com/" target="_blank">Facebook</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Warmory — Warm + Memory
+  </footer>
+
 </body>
 </html>
